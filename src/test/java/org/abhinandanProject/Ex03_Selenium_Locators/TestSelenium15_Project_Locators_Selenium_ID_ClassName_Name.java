@@ -4,6 +4,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+
 import org.abhinandanProject.CommonToAll;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestSelenium12_Project_Locators_Selenium_ID_ClassName_Name extends CommonToAll {
+public class TestSelenium15_Project_Locators_Selenium_ID_ClassName_Name extends CommonToAll {
 
 
         @Description("TC#1 - verify that with invalid login, error message is displayed!")

@@ -3,16 +3,13 @@ package org.abhinandanProject.Ex02_SeleniumBasics;
 import io.qameta.allure.Description;
 import org.abhinandanProject.CommonToAll;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import java.io.File;
 
-public class TestSelenium_ProjectNo2 extends CommonToAll {
+public class TestSelenium13_MiniProject01 extends CommonToAll {
 
     @Description("Options Class")
     @Test
@@ -26,7 +23,8 @@ public class TestSelenium_ProjectNo2 extends CommonToAll {
         WebDriver driver = new EdgeDriver(edgeOptions);
         driver.get("https://www.youtube.com/watch?v=jhBAUzoXj_A");
 
-
+        custom_wait(3000);
+        closeBrowser(driver);
 
     }
 }

@@ -1,6 +1,10 @@
 package org.abhinandanProject.Ex03_Selenium_Locators;
 
 import io.qameta.allure.Description;
+
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.abhinandanProject.CommonToAll;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,9 +13,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MiniProject001 extends CommonToAll {
+public class TestSelenium17_MiniProject02 extends CommonToAll {
 
-    @Description("Varify vmo create account negative test case")
+    @Owner("Abhinandan Basu")
+    @Severity(SeverityLevel.BLOCKER)
+    @Description("Varify that the error message comes with invalid email on signup page")
     @Test
     public void test_vmo_free_trial()
     {

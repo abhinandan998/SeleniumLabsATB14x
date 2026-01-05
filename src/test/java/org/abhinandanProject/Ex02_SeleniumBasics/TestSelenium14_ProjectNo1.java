@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestSelenium_ProjectNo1 extends CommonToAll {
+public class TestSelenium14_ProjectNo1 extends CommonToAll {
 
     @Description("TC#1 - Varify that a particular text exists on a katalon website")
     @Test
