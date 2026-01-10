@@ -23,7 +23,7 @@ public class WaitHelpers {
         }
     }
 
-    public static  void waitImplicitWait(WebDriver driver, int time)
+    public static void waitImplicitWait(WebDriver driver, int time)
     {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(time));
 
@@ -54,6 +54,7 @@ public class WaitHelpers {
         {
             public WebElement apply(WebDriver driver)
             {
+
                 return driver.findElement(locator);
             }
         });
