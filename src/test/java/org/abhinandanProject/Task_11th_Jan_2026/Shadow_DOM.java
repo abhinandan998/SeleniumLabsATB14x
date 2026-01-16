@@ -1,11 +1,10 @@
 package org.abhinandanProject.Task_11th_Jan_2026;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.abhinandanProject.Ex07_WaitHelper.WaitHelpers;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import java.util.Set;
@@ -29,6 +28,27 @@ public class Shadow_DOM {
         WebElement input_pizza = (WebElement) js.executeScript("return document.querySelector('div#userName').shadowRoot.querySelector('div#app2').shadowRoot.querySelector('input#pizza')");
         input_pizza.sendKeys("farmhouse");
 
-        driver.quit();
+        WaitHelpers.waitJVM(2000);
+        WebElement concept_test = (WebElement) js.executeScript("return document.querySelector('div#userName').shadowRoot.querySelector('div#concepts')");
+        //workaround inside closed shadowDOM
+        concept_test.click();
+
+        Actions action = new Actions(driver);
+        action.sendKeys(Keys.TAB).perform();
+        action.sendKeys("DevTools cltr+f is not right plaform to verify xpath").perform();
+
+        WaitHelpers.waitJVM(3000);
+
+        action.sendKeys(Keys.TAB).perform();
+        //for the url to click;
+//        WaitHelpers.waitJVM(3000);
+//        action.sendKeys(Keys.ENTER).perform();
+
+        action.sendKeys(Keys.TAB).perform();
+        action.sendKeys("Abhi@12345").perform();
+
+
+
+        //driver.quit();
     }
 }
