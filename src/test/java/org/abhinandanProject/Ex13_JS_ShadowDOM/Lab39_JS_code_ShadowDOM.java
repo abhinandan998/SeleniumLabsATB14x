@@ -19,5 +19,7 @@ public class Lab39_JS_code_ShadowDOM {
         WebElement input_pizza = (WebElement) js.executeScript("return document.querySelector('div#userName').shadowRoot.querySelector('div#app2').shadowRoot.querySelector('input#pizza')");
         input_pizza.sendKeys("farmhouse");
 
+
+
     }
 }

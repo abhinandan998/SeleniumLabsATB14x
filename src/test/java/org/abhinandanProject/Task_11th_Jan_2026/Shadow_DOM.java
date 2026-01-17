@@ -31,6 +31,7 @@ public class Shadow_DOM {
         WaitHelpers.waitJVM(2000);
         WebElement concept_test = (WebElement) js.executeScript("return document.querySelector('div#userName').shadowRoot.querySelector('div#concepts')");
         //workaround inside closed shadowDOM
+        WaitHelpers.waitJVM(2000);
         concept_test.click();
 
         Actions action = new Actions(driver);
